@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type = "module">
+        import { Carte } from "./Carte.js";
+
+        let carte1 = new Carte('poezii', 'Mihai Eminescu', 'Polirom', 2007, 25);
+        carte1.afiseazaInfo();
+        let carte2 = new Carte('poezii', 'Mihai Eminescu', 'Charles', 2007, 45);
+        carte2.afiseazaInfo();
+
+        console.log("carte1 :>> ", carte1);
+        console.log("carte2 :>> ", carte2);
+
+
+    </script>
+</body>
+</html>
