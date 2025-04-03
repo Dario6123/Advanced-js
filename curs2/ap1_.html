@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Shop{
+            constructor(nume, tip, program, nrAngajati, adresa){
+                this.nume = nume;
+                this.tip  = tip;
+                this.orar = orar;
+                this.nrAngajati = nrAngajati;
+                this.adresa = adresa;
+            }
+            set myNume(numeNou){
+                if(numeNou.length >= 3){
+                    this.nume = numeNou;
+                }
+            }
+            get myNume(){
+                return this.nume;
+            }
+        }
+        let newShop = new Shop('CCC', 'Incaltaminte', '8:00 - 22:00', 234, 'Bucuresti');
+    </script>
+</body>
+</html>
