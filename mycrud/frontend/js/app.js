@@ -63,7 +63,7 @@ $(document).ready(function ($) {
                     render: function (data, type, row, meta) {
                         if (type === 'display') {
                             let link = 'http://localhost:3002/users/' + row.id;
-                            return `<a href="javascript:void(0)" class="btn btn-info view" data-id="` + row.id + `">Vezi</a>
+                            return `<a href="javascript:void(0)" class="btn btn-success view" data-id="` + row.id + `">Vezi</a>
                             <a href="javascript:void(0)" class="btn btn-primary edit" data-id="`+ row.id + `">Editeaza</a>
                             <a href="javascript:void(0)" class="btn btn-danger delete" data-id="`+ row.id + `">Sterge</a>`;
                         }
@@ -94,7 +94,7 @@ $(document).ready(function ($) {
                  console.log(res.data.id);
                 
                 let datan= moment(res.data.datanastere).format('YYYY-MM-DD');  
-                alert(datan);
+                //alert(datan);
                 $('#id').val(res.data.id);
                 $('#lname').val(res.data.nume);
                 $('#fname').val(res.data.prenume);
